@@ -1,13 +1,3 @@
-
-var lj = $("#fr-3");
-$(lj).mouseenter(function () {
-  $(".fr-select").show();
-  console.log('11111');
-});
-
-$(lj).mouseleave(function () {
-  $(".fr-select").hide();
-});
 // 滚动事件，发生滚动固定导航
 $(window).scroll(function () {
   var scrollTop = $(this).scrollTop(); //滚轮距上距离

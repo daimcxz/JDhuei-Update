@@ -530,3 +530,53 @@ em {
   background-color: red;
   border: 1px solid red;
 }
+.box2 {
+  width: 100%;
+}
+.box2 .wrap {
+  width: 1200px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+.box2 .intro-block {
+  margin-top: 60px;
+}
+.box2 .intro-block .intro-bhead {
+  font-size: 18px;
+}
+.box2 .intro-block .intro-bhead p {
+  font-weight: 700;
+}
+.box2 .intro-block .intro-bhead p b {
+  margin: 0 26px;
+}
+.box2 .intro-block .intro-yunshanimg-a {
+  margin-top: 60px;
+}
+.box2 .attract-contact .intro-bhead h4 {
+  text-align: center;
+  font-size: 36px;
+}
+.box2 .attract-contact .intro-bhead .attr1 {
+  font-weight: 700;
+}
+.box2 .attract-contact .intro-bhead .intro-red {
+  font-size: 128px;
+  color: #c00;
+}
+.box2 .attract-contact .attract-actions {
+  width: 895px;
+  display: block;
+  margin: 50px auto;
+}
+.box2 .attract-contact .attract-actions a {
+  float: left;
+  color: #FFF;
+  font-size: 32px;
+  margin-right: 20px;
+  width: 278px;
+  height: 147px;
+  line-height: 154px;
+  text-align: center;
+  background-color: #c00;
+}
