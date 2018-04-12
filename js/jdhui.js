@@ -49,6 +49,13 @@ $(".menu_publishers").mouseleave(function(){
   $(this).children(".pus-wrap").hide();
 })
 
+$(".min-box").mouseenter(function(){
+  $(this).children(".txt").animate({ top: "65%" }, 1000).show();
+})
+$(".min-box").mouseleave(function(){
+  $(this).children(".txt").animate({ top: "100%" }, 2000);
+})
+
 
 var timer;  //手风琴 
 $(".sub-content-main").on("mouseenter", function () {
@@ -58,6 +65,7 @@ $(".sub-content-main").on("mouseenter", function () {
   timer = setTimeout(function () {//定时器
     console.log('2222');
     console.log(that);
+    $(that).children().removeClass("hover");
     $(that).css({ borderLeft: "2px solid red", borderRight: "2px solid red" });
     $(that).siblings('.sub-content-main').animate({ width: "198px" }, 500);
     $(that).animate({ width: "398px" }, 500).children().show();//parent()父元素.siblings()兄弟.children 子元素 animate 动作

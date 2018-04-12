@@ -74,10 +74,16 @@ a:hover {
   clear: both;
   content: "";
   overflow: hidden;
-  display: table;
 }
 em {
   font: inherit;
+}
+tr {
+  height: 80px;
+}
+th,
+td {
+  text-align: center;
 }
 .sub-small {
   font-size: 130%;
@@ -177,6 +183,25 @@ em {
   top: 260px;
   left: -90px;
 }
+#hover {
+  width: 398px ;
+  border-left-color: #e40000 ;
+  border-left-width: 2px ;
+  border-right-color: #e40000 ;
+  border-right-width: 2px ;
+}
+#hover h5 {
+  opacity: 1 ;
+}
+#hover .content-main-right {
+  display: block ;
+}
+#hover .content-main-img {
+  display: block ;
+}
+#hover #img-bg {
+  background-color: #e40000;
+}
 .z {
   width: 100%;
 }
@@ -195,6 +220,7 @@ em {
   color: #FFF;
 }
 .z .navbar-default .container .col-md-7 .navbar-nav li .pus-wrap {
+  display: none;
   position: absolute;
   width: 1200px;
   height: 200px;
@@ -210,7 +236,7 @@ em {
 }
 .z .navbar-default .container .col-md-7 .navbar-nav li .pus-wrap ul li {
   float: left;
-  margin-right: 200px;
+  margin-right: 188px;
   margin-bottom: 20px;
 }
 .z .navbar-default .container .col-md-7 .navbar-nav li .pus-wrap .sp {
@@ -404,10 +430,14 @@ em {
   text-align: left;
 }
 .g .sub-wrap .sub-content-hit .zxc table {
-  background-image: url("../../../image/JDhui1-9/img5.png");
+  margin-top: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
 }
-.g .sub-wrap .sub-content-hit .zxc table th {
+.g .sub-wrap .sub-content-hit .zxc table tr {
+  text-align: center;
+}
+.g .sub-wrap .sub-content-hit .zxc table tr th {
   text-align: center;
 }
 .g .sub-wrap .sub-content-words h2 {
@@ -473,6 +503,20 @@ em {
   border-radius: 6px;
   color: #FFF;
 }
+.s .sub-content-1 .min-box .txt {
+  position: absolute;
+  height: 158px;
+  top: 100%;
+  width: 94%;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.s .sub-content-1 .min-box .txt .mark {
+  padding: 0;
+}
+.s .sub-content-1 .min-box .txt p {
+  padding: 8px 10px 0;
+}
 .s .sub-content-1 .min-box1 {
   background-image: url("../../../image/min-box1.png");
   background-repeat: no-repeat;
@@ -505,18 +549,11 @@ em {
 }
 .h .sub-list {
   position: relative;
-  top: 165px;
+  top: 220px;
   width: 1200px;
-  height: 40px;
-  background-color: #858585;
 }
-.h .sub-list ul {
-  color: #FFF;
-}
-.h .sub-list ul li {
-  float: left;
-  padding-top: 22px;
-  padding: 15px 63px;
+.h .sub-list .table-bordered tr {
+  height: 30px;
 }
 .h .sub-list .sub-content-btn .btn {
   color: white;
