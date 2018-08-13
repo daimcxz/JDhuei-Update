@@ -157,6 +157,22 @@ module.exports = function(grunt) {
                 ]
             }
         },
+        //热更新
+        connect: {
+            options: {
+                port: 9000,
+                open: true,
+                livereload: 35729,
+                // Change this to '0.0.0.0' to access the server from outside
+                hostname: ''
+            },
+            server: {
+                options: {
+                    port: 9001,
+                    base: './'
+                },
+            },
+        },
         watch: {
             js: {
                 files: [
@@ -207,6 +223,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     //压缩图片
     grunt.registerTask('imgmin',['imagemin']);
@@ -216,7 +233,7 @@ module.exports = function(grunt) {
     grunt.registerTask('jsmin',['concat', 'babel', 'uglify']);
     grunt.registerTask('cl',['clean']);
     //监测 
-    grunt.registerTask('watchit',['clean', 'less', 'concat', 'babel', 'postcss', 'cssmin', 'uglify', 'watch']);
+    grunt.registerTask('watchit',['clean', 'less', 'concat', 'babel', 'postcss', 'cssmin', 'uglify', 'connect','watch']);
     grunt.registerTask('default',['clean', 'less', 'concat', 'babel',  'postcss', 'cssmin', 'uglify']);
     
 };

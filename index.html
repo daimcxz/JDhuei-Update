@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./js/vide7.1.0/css/video-js.min.css">
   <link rel="stylesheet" href="./js/libs/swiper/Swiper-4.0.7/dist/css/swiper.min.css">
   <link rel="stylesheet" href="./public/stylesheets/less/jdhui1-5.css">
   <!-- <link rel="stylesheet" href="./js/libs/swiper/Swiper-4.0.7/dist/css/swiper.min.css"> -->
@@ -17,16 +18,19 @@
   <!--
         导航栏 轮播器
     -->
-  <div class="z">
+  <header class="header">
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
+        <!--logo区-->
         <div class="col-md-4">
           <a href="./index.html">
             <img src="./image/logo1.png" alt="">
           </a>
         </div>
+         <!--logo 结束-->
         <div class="col-md-1">
         </div>
+         <!--导航 -->
         <div class="col-md-7">
           <ul class="nav navbar-nav" id="nav-col">
             <li>
@@ -41,38 +45,46 @@
                 <i class="glyphicon glyphicon-triangle-bottom"></i>
               </a>
               <div class="pus-wrap cl">
-                <h2>家电汇 为您提供完整的家电全产业链服务</h2>
+                <h4>家电汇 为您提供完整的家电全产业链服务</h4>
                 <div class="sp"></div>
                 <ul>
                   <li>
-                    <a> 超级商情 [传媒]
-                      <p>慧聪网旗下家电行业移动互联网平台</p>
-                    </a>
+                    <div>
+                        <a> 超级商情 [传媒]</a>
+                        <p>慧聪网旗下家电行业移动互联网平台</p>
+                    </div>
                   </li>
                   <li>
-                    <a> 超级商情 [传媒]
-                      <p>慧聪网旗下家电行业移动互联网平台</p>
-                    </a>
+                    <div>
+                        <a> 超级商情 [传媒]</a>
+                        <p>慧聪网旗下家电行业移动互联网平台</p>
+                    </div>
                   </li>
                   <li>
-                    <a> 超级商情 [传媒]
-                      <p>慧聪网旗下家电行业移动互联网平台</p>
-                    </a>
+                    <div>
+                        <a> 超级商情 [传媒]</a>
+                        <p>慧聪网旗下家电行业移动互联网平台</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <div>
+                        <a> 超级商情 [传媒]</a>
+                        <p>慧聪网旗下家电行业移动互联网平台</p>
+                    </div>
                   </li>
                   <li>
-                    <a> 超级商情 [传媒]
-                      <p>慧聪网旗下家电行业移动互联网平台</p>
-                    </a>
+                    <div>
+                        <a> 超级商情 [传媒]</a>
+                        <p>慧聪网旗下家电行业移动互联网平台</p>
+                    </div>
                   </li>
                   <li>
-                    <a> 超级商情 [传媒]
-                      <p>慧聪网旗下家电行业移动互联网平台</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a> 超级商情 [传媒]
-                      <p>慧聪网旗下家电行业移动互联网平台</p>
-                    </a>
+                    <div>
+                        <a> 超级商情 [传媒]</a>
+                        <p>慧聪网旗下家电行业移动互联网平台</p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -95,25 +107,23 @@
             </li>
           </ul>
         </div>
+        <!--导航  结束-->
       </div>
     </nav>
+      <!--轮播器-->
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img src="./image/header.png" alt="...">
           <div class="carousel-caption">
-
           </div>
         </div>
         <div class="item">
           <img src="./image/header.png" alt="...">
           <div class="carousel-caption">
-
           </div>
         </div>
-
       </div>
-
       <!-- Controls -->
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -124,11 +134,13 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+     <!--轮播器 结束-->
     <div class="sub-container">
       <div class="col-md-4 pop">
         <a href="">视屏中心</a>
         <div class="pus-pop">
-          <img src="./image/icon-img1.png" alt="">
+          <img src="./image/icon-img1.png" alt="" id="CG">
+            <video src="./image/cg/lolCG.mp4"  controls></video>
         </div>
       </div>
       <div class="col-md-4  thr-border pop">
@@ -157,9 +169,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
   <!--手风琴-->
-  <div class="g">
+  <main class="main">
     <div class="sub-wrap">
       <div class="sub-content">
         <h2>
@@ -328,12 +340,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </main>
   <!--小轮播器-->
-  <div class="s cl">
+  <div class="content  ">
     <div class="sub-wrap">
       <div class="sub-content">
-        <div class="sub-content">
           <h2>
             <em>INDUSTRIAL CHAIN</em>全产业链
           </h2>
@@ -341,7 +352,6 @@
             <em></em>
           </div>
           <small class="sub-small">慧聪·家电汇 为您提供完整的家电全产业链服务支持</small>
-        </div>
       </div>
     </div>
     <div class=" sub-content-1 swiper-container swiper-container-horizontal swiper-container-free-mode" id="swiper2">
@@ -427,7 +437,7 @@
     </div>
   </div>
   <!--ajks 表格-->
-  <div class="h">
+  <footer class="footer">
     <div class="sub-wrap">
       <div class="sub-content">
         <h2>
@@ -439,15 +449,6 @@
         <small class="sub-small">传统企业转型电商首选，用户口碑业内领先！</small>
       </div>
       <div class="sub-list">
-        <!-- <ul>
-          <li>需求编号</li>
-          <li>采购商品</li>
-          <li>台数</li>
-          <li>地区</li>
-          <li>姓名</li>
-          <li>手机号</li>
-          <li>状态</li>
-        </ul> -->
         <table class="table table-bordered">
             <thead>
               <tr>
@@ -501,6 +502,30 @@
                 <td>@twitter</td>
                 <td>@twitter</td>
               </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
             </tbody>
           </table>
         <div class="sub-content-btn">
@@ -509,10 +534,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </footer>
+  <!-- 底部 黑条 -->
+  <footer class="banner">
+
+  </footer>
 </body>
 <script src="./js/libs/jquery-3.2.1.js"></script>
 <script src="./js/jdhui.js"></script>
+<script src="./js/vide7.1.0/js/video.min.js"></script>
+<script src="./js/vide7.1.0/js/zh-CN.js"></script>
 <!-- <script src="./js/libs/swiper/Swiper-4.0.7//dist/js/swiper.min.js"></script> -->
 <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="./js/libs/swiper/Swiper-4.0.7//dist/js/swiper.min.js"></script>

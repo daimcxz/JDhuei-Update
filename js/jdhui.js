@@ -5,7 +5,7 @@ $(window).scroll(function () {
     $(".navbar").css({
       backgroundColor: '#fff',
     });
-    $("#nav-col").children().find("a").css({color:"#777"});
+    $("#nav-col").children().find("a").css({color:"#333"});
   } else {
     $(".navbar").css({
       backgroundColor: 'rgba(0, 0, 0, 0.1)',
@@ -42,6 +42,19 @@ $(".pop").mouseleave(function(){
   $(this).children(".pus-pop,.pus-pop-txt").hide();
 })
 
+ $("#CG").click(function(){
+  var thai = this;
+  // $("body").css({ zIndex: "20" ,filter: "alpha(opacity=50)",
+  // opacity: "0.5"});
+   $(thai).siblings().animate({width: "400px",height: "177px",
+   top: "-177px"}).css({ backgroundColor: "#333" ,zIndex: "25"});
+ })
+// var myPlayer = videojs('my-video');
+// videojs("my-video").ready(function(){
+//   var myPlayer = this;
+//   myPlayer.play();
+// });
+
 $(".menu_publishers").mouseenter(function(){
   $(this).children(".pus-wrap").show();
 })
@@ -49,12 +62,7 @@ $(".menu_publishers").mouseleave(function(){
   $(this).children(".pus-wrap").hide();
 })
 
-$(".min-box").mouseenter(function(){
-  $(this).children(".txt").animate({ top: "65%" }, 1000).show();
-})
-$(".min-box").mouseleave(function(){
-  $(this).children(".txt").animate({ top: "100%" }, 2000);
-})
+
 
 
 var timer;  //手风琴 
@@ -110,3 +118,20 @@ $(document).ready(function () {
     },
   });
 })
+
+//轮播器  （小）  朦板
+var time;
+$(".swiper-slide").on("mouseenter", function () {
+   var thet = this;
+   time = setTimeout(function(){
+     console.log("11111111111111")
+     $(thet).find(".txt").animate({ top: "65%" });
+     $(thet).siblings().find(".txt").animate({ top: "100%" });
+
+   }, 500);
+}).on("mouseleave", function () {
+  $(".swiper-slide").siblings().find(".txt").animate({ top: "100%" });
+  clearTimeout(time);
+})
+
+
